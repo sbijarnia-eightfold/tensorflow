@@ -52,7 +52,6 @@ do_external_licenses_check(){
 @com_github_googlecloudplatform_google_cloud_cpp//google
 @com_github_grpc_grpc//src/compiler
 @platforms//os
-@ml_dtypes_py//ml_dtypes
 @ruy//
 @rules_python//
 @stablehlo//stablehlo/experimental
@@ -74,7 +73,6 @@ EOF
 @com_github_googlecloudplatform_google_cloud_cpp//
 @embedded_jdk//
 ^//$
-@ml_dtypes_py//
 @ruy//
 EOF
 
