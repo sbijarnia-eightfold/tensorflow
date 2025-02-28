@@ -156,10 +156,10 @@ HERMETIC_PYTHON_VERSION variable was not set correctly, using default version.
 Python {} will be used.
 To select Python version, either set HERMETIC_PYTHON_VERSION env variable in
 your shell:
-  export HERMETIC_PYTHON_VERSION=3.12
+  export HERMETIC_PYTHON_VERSION=3.13
 OR pass it as an argument to bazel command directly or inside your .bazelrc
 file:
-  --repo_env=HERMETIC_PYTHON_VERSION=3.12
+  --repo_env=HERMETIC_PYTHON_VERSION=3.13
 """.format(version))  # buildifier: disable=print
     return version, kind
 

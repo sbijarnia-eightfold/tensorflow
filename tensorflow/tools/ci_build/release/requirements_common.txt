@@ -12,6 +12,7 @@ ml_dtypes ~= 0.3.1
 numpy ~= 1.22.0; python_version < '3.11'
 numpy ~= 1.23.2; python_version == '3.11' # Earliest version for Python 3.11
 numpy ~= 1.26.0; python_version >= '3.12' # Earliest version for Python 3.12
+numpy ~= 1.26.4; python_version >= '3.13' # Earliest version for Python 3.13
 opt_einsum ~= 3.3.0
 protobuf ~= 3.20.3  # NOTE: Earliest version for Python 3.10
 six ~= 1.16.0
@@ -36,6 +37,7 @@ portpicker ~= 1.6.0
 scipy ~= 1.7.2; python_version < '3.11'
 scipy ~= 1.9.2; python_version == '3.11' # Earliest version for Python 3.11
 scipy ~= 1.11.3; python_version >= '3.12' # Earliest version for Python 3.12
+scipy ~= 1.13.1; python_version >= '3.13' # Earliest version for Python 3.13
 
 # This is usually vendored in setuptools but ensure it gets installed in CI anyway
 # No bound here, we prefer the one in setuptools

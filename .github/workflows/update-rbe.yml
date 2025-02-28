@@ -111,24 +111,28 @@ jobs:
         map sigbuild-r2.16-python3.10 2.16-python3.10
         map sigbuild-r2.16-python3.11 2.16-python3.11
         map sigbuild-r2.16-python3.12 2.16-python3.12
+        map sigbuild-r2.16-python3.13 2.16-python3.13
         # TF 2.16 + Clang (containers are the same, but env vars in configs.bzl are different)
         map sigbuild-r2.16-clang 2.16-python3.11
         map sigbuild-r2.16-clang-python3.9 2.16-python3.9
         map sigbuild-r2.16-clang-python3.10 2.16-python3.10
         map sigbuild-r2.16-clang-python3.11 2.16-python3.11
         map sigbuild-r2.16-clang-python3.12 2.16-python3.12
+        map sigbuild-r2.16-clang-python3.13 2.16-python3.13
         # TF 2.17
         map sigbuild-r2.17 2.17-python3.11
         map sigbuild-r2.17-python3.9 2.17-python3.9
         map sigbuild-r2.17-python3.10 2.17-python3.10
         map sigbuild-r2.17-python3.11 2.17-python3.11
         map sigbuild-r2.17-python3.12 2.17-python3.12
+        map sigbuild-r2.17-python3.13 2.17-python3.13
         # TF 2.17 + Clang (containers are the same, but env vars in configs.bzl are different)
         map sigbuild-r2.17-clang 2.17-python3.11
         map sigbuild-r2.17-clang-python3.9 2.17-python3.9
         map sigbuild-r2.17-clang-python3.10 2.17-python3.10
         map sigbuild-r2.17-clang-python3.11 2.17-python3.11
         map sigbuild-r2.17-clang-python3.12 2.17-python3.12
+        map sigbuild-r2.17-clang-python3.13 2.17-python3.13
     - name: Create Pull Request with changes
       uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
       with:

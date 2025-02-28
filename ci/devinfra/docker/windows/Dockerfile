@@ -79,7 +79,7 @@ RUN C:\tools\msys64\usr\bin\bash.exe -lc \
   'pacman --noconfirm -Syy curl git patch vim unzip zip'
 
 # Install Python as a general utility/tool.
-ENV PYTHON_VERSION 3.12.3
+ENV PYTHON_VERSION 3.13.1
 
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{0}-amd64.exe' -f $env:PYTHON_VERSION); \
 	Write-Host ('Downloading {0} ...' -f $url); \

@@ -7,13 +7,13 @@ Defaults to 3.10.
 To set wheel name, add "--repo_env=WHEEL_NAME=tensorflow_cpu"
 """
 
-VERSIONS = ["3.9", "3.10", "3.11", "3.12"]
-DEFAULT_VERSION = "3.11"
+VERSIONS = ["3.9", "3.10", "3.11", "3.12", "3.13"]
+DEFAULT_VERSION = "3.13"
 WARNING = """
 TF_PYTHON_VERSION environment variable was not set correctly; using Python {}.
 
 To set Python version, run:
-export TF_PYTHON_VERSION=3.11
+export TF_PYTHON_VERSION=3.13
 """.format(DEFAULT_VERSION)
 
 content = """

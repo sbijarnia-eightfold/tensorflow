@@ -34,18 +34,19 @@ RUN /setup.python.sh python3.13 /builder.requirements.txt
 #   - Other projects do not use free-threaded python in their current CI.
 RUN /setup.python.sh python3.13-nogil /builder.requirements.txt
 
-# Since we are using python3.12 as the default python version, we need to
-# install python3.12 last for now.
+# Since we are using python3.13 as the default python version, we need to
+# install python3.13 last for now.
 # TODO(b/376338367): switch to pyenv.
-RUN /setup.python.sh python3.12 /builder.requirements.txt
+RUN /setup.python.sh python3.13 /builder.requirements.txt
 
 # Setup links for TensorFlow to compile.
 # Referenced in devel.usertools/*.bazelrc.
-# Set python3.12 as the default python version.
-# TF does not support python3.13.
-RUN ln -sf /usr/bin/python3.12 /usr/bin/python3
-RUN ln -sf /usr/bin/python3.12 /usr/bin/python
-RUN ln -sf /usr/lib/python3.12 /usr/lib/tf_python
+# Set python3.13 as the default python version.
+# TF does not support python3.14.
+
+RUN ln -sf /usr/bin/python3.13 /usr/bin/python3
+RUN ln -sf /usr/bin/python3.13 /usr/bin/python
+RUN ln -sf /usr/lib/python3.13 /usr/lib/tf_python
 
 # Make sure clang is on the path
 RUN ln -s /usr/lib/llvm-18/bin/clang /usr/bin/clang

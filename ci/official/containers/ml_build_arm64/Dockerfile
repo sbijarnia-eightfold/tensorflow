@@ -65,7 +65,7 @@ RUN /setup.python.sh python3.11 requirements.txt
 RUN /setup.python.sh python3.12 requirements.txt
 RUN /setup.python.sh python3.13 requirements.txt
 
-# Python commands by default run under 3.11
-RUN ln -sf /usr/bin/python3.11 /usr/bin/python3
-RUN ln -sf /usr/bin/python3.11 /usr/bin/python
-RUN ln -sf /usr/lib/python3.11 /usr/lib/tf_python
+# Python commands by default run under 3.13
+RUN ln -sf /usr/bin/python3.13 /usr/bin/python3
+RUN ln -sf /usr/bin/python3.13 /usr/bin/python
+RUN ln -sf /usr/lib/python3.13 /usr/lib/tf_python
