@@ -65,9 +65,9 @@ elif _tf_api_dir not in __path__:
 _current_module.compat.v2  # pylint: disable=pointless-statement
 
 # Load tensorflow-io-gcs-filesystem if enabled
-if (_os.getenv("TF_USE_MODULAR_FILESYSTEM", "0") == "true" or
-    _os.getenv("TF_USE_MODULAR_FILESYSTEM", "0") == "1"):
-  import tensorflow_io_gcs_filesystem as _tensorflow_io_gcs_filesystem
+# if (_os.getenv("TF_USE_MODULAR_FILESYSTEM", "0") == "true" or
+#     _os.getenv("TF_USE_MODULAR_FILESYSTEM", "0") == "1"):
+#   import tensorflow_io_gcs_filesystem as _tensorflow_io_gcs_filesystem
 
 # Lazy-load Keras v1.
 _tf_uses_legacy_keras = (
